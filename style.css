@@ -1,0 +1,83 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    background: hsl(0, 100%, 74%);
+    background-image: url(bg-intro-desktop.png);
+    font-size: 16px;
+    font-family: url(https://fonts.google.com/specimen/Poppins);
+}
+.container{
+    padding: 20px;
+    margin-top: 100px;
+    height: 90vh;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    padding-left: 20px;
+    padding-top: 20px;
+}
+.col-2 h2, .col-2 p{
+    color: white;
+}
+.col-2 h2{
+    font-size: 48px;
+    font-weight: 600;
+    letter-spacing: 4px;
+    margin-bottom: 10px;
+}
+.col-2 h3{
+    background: hsl(248, 32%, 49%);
+    width: 500px;
+    text-align: center;
+    padding: 15px;
+    color: hsl(246, 25%, 77%);
+}
+form{
+    background: white;
+    padding: 24px;
+    margin-top: 20px;
+    width: 500px;
+    height: 400px;
+}
+input{
+    padding: 15px;
+    width: 100%;
+    margin-bottom: 10px;
+}
+button{
+    background: hsl(154, 59%, 51%);
+    width: 100%;
+    padding: 15px;
+    border: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+form h5{
+    font-weight: 400;
+    color: hsl(246, 25%, 77%);
+    padding-top: 20px;
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) 
+{
+    .row{
+        text-align: center;
+
+    }
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 30px;
+    }
+    
+}
